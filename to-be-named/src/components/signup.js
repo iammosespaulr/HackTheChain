@@ -5,10 +5,14 @@ import LeafWithCoins from "../img/leaf-in-coins.jpg";
 import Logo from "../img/logo192.png";
 import "../fonts/AvenirLTStd-Book.otf";
 import { TextField, Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
-
-
-function LoginPage() {
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+  
+function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -46,7 +50,7 @@ function LoginPage() {
                     </div>
                 </Row>
                 <Row className="login-form">
-                 <b className="login-label">Login</b>
+                 <b className="login-label">SIGNUP PAGE</b>
                  <br />
                  </Row>
                 <div  className="form">
@@ -57,11 +61,11 @@ function LoginPage() {
                 </form>
                 <p className="forgot-password"><a href="#" className="forgot-password" >Forgot Password?</a></p>
                 <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
-                <p className="new-account">Don't have an account? <Link to="/signup" className="treasury-text">Create a new account.</Link></p>
+                <p className="new-account">Don't have an account? <a href="#" className="treasury-text">Create a new account.</a></p>
                 </div>
             </Col>
     </Container>
   );
 }
 
-export default LoginPage;
+export default SignUpPage;

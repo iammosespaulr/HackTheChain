@@ -31,9 +31,6 @@ function SignUpPage() {
   
   return (
     <Container>
-            <Col xs="8">
-                <img src={LeafWithCoins} className="left-image-home-page" />
-            </Col>
             <Col xs="4">
                 {/* <a
                 className="App-link"
@@ -49,9 +46,10 @@ function SignUpPage() {
                       <p className="home-page-title">Turtle</p><p className="treasury-text home-page-title">Treasury</p>
                     </div>
                 </Row>
-                <Row className="login-form">
-                 <b className="login-label">SIGNUP PAGE</b>
+                <Row className="">
+                 <b className="login-label">Sign Up!</b>
                  <br />
+                 <p>Tell us more about you so you can get started.</p>
                  </Row>
                 <div  className="form">
                 <form noValidate autoComplete="off">
@@ -63,6 +61,9 @@ function SignUpPage() {
                 <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
                 <p className="new-account">Don't have an account? <a href="#" className="treasury-text">Create a new account.</a></p>
                 </div>
+            </Col>
+            <Col xs="8">
+                <img src={LeafWithCoins} className="right-image-home-page" />
             </Col>
     </Container>
   );

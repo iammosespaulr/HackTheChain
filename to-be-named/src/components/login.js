@@ -30,7 +30,7 @@ function LoginPage() {
             <Col xs="8">
                 <img src={LeafWithCoins} className="left-image-home-page" />
             </Col>
-            <Col xs="4">
+            <Col xs="4" className="right-column">
                 {/* <a
                 className="App-link"
                 href="https://github.com/iammosespaulr/HackTheChain"
@@ -40,21 +40,22 @@ function LoginPage() {
                 The Source
                 </a> */}
                 <Row>
-                    <img src={Logo} className="turtle-logo-home-page"/>
                     <div className="home-page-title-div">
-                      <p className="home-page-title">Turtle</p><p className="treasury-text home-page-title">Treasury</p>
+                    <img src={Logo} className="turtle-logo-home-page"/>
+                      <p className="home-page-title">                    
+                        Turtle</p><p className="treasury-text home-page-title">Treasury</p>
                     </div>
                 </Row>
                 <Row className="login-form">
                  <b className="login-label">Login</b>
                  <br />
                  </Row>
-                <div  className="form">
-                <form noValidate autoComplete="off">
+                <div className="form">
                     <TextField required id="standard-basic" label="EMAIL ADDRESS" onChange={handleChange}/>
                     <br />
                     <TextField required type="password" id="standard-basic" label="PASSWORD" className="password-login-page" onChange={handleChange2}/>
-                </form>
+                </div>
+                <div className="form">
                 <p className="forgot-password"><a href="#" className="forgot-password" >Forgot Password?</a></p>
                 <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
                 <p className="new-account">Don't have an account? <Link to="/signup" className="treasury-text">Create a new account.</Link></p>

@@ -96,9 +96,13 @@ p {
   text-decoration: none;
   color: black;
   margin-top: 0 !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 10pxy !important;
 }
 
 .new-account {
   font-size: medium;
+}
+
+#standard-basic-label {
+  font-size: 10pt;
 }

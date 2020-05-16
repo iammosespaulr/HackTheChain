@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import { Container, Row, Col } from 'reactstrap';
 import LeafWithCoins from "../img/leaf-in-coins.jpg";
@@ -7,6 +7,22 @@ import "../fonts/AvenirLTStd-Book.otf";
 import { TextField, Button } from "@material-ui/core";
 
 function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handleChange(e) {
+      setEmail(e.target.value);
+  }
+
+  function handleChange2(e) {
+      setPassword(e.target.value);
+  }
+  function handleSubmit() {
+      console.log("Email " + email);
+      console.log("Pasword " + password);
+    
+  }
+  
   return (
     <Container>
             <Col xs="8">
@@ -33,12 +49,12 @@ function LoginPage() {
                  </Row>
                 <div  className="form">
                 <form noValidate autoComplete="off">
-                    <TextField required id="standard-basic" label="EMAIL ADDRESS"/>
+                    <TextField required id="standard-basic" label="EMAIL ADDRESS" onChange={handleChange}/>
                     <br />
-                    <TextField required type="password" id="standard-basic" label="PASSWORD" className="password-login-page"/>
+                    <TextField required type="password" id="standard-basic" label="PASSWORD" className="password-login-page" onChange={handleChange2}/>
                 </form>
-                <p className="forgot-password"><a href="#" className="forgot-password">Forgot Password?</a></p>
-                <Button variant="contained" className="login-submit-button">Sign In</Button>
+                <p className="forgot-password"><a href="#" className="forgot-password" >Forgot Password?</a></p>
+                <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
                 <p className="new-account">Don't have an account? <a href="#" className="treasury-text">Create a new account.</a></p>
                 </div>
 

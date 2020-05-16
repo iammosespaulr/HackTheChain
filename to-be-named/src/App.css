@@ -2,37 +2,107 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'), url(./fonts/AvenirLTStd-Book.otf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HOME PAGE STYLES */
+
+.left-image-home-page {
+  float: left;
+  height: 100vh;
+  width: 71%;
+  margin-top: -10px;
+}
+
+.turtle-logo-home-page {
+  float: left;
+  width: 50px;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5px;
+}
+
+.home-page-title {
+  float: left;
+  font-size: xxx-large;
+}
+
+.home-page-title-div {
+  padding-top: 2.7%;
+}
+
+p {
+  font-family: Avenir;
+}
+
+.treasury-text {
+  color: #64d2a2;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.login-form {
+  padding-top: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-label {
+  float: left;
+  padding-left: 5%;
+}
+
+.form {
+  float: left;
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
+.email-address-label {
+  float: left;
+  font-size: small;
+}
+
+.MuiInput-formControl {
+ width: 350px;
+}
+
+.MuiFormControl-root.MuiTextField-root {
+  padding-bottom: 5%;
+}
+
+.login-submit-button {
+  background-color: #00b665 !important;
+  color: white !important;
+  width: 350px !important;
+  height: 50px;
+}
+
+.MuiButton-label {
+  font-size: 20px !important;
+}
+
+.forgot-password {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  margin-top: 0 !important;
+  margin-bottom: 10pxy !important;
+}
+
+.new-account {
+  font-size: medium;
+}
+
+#standard-basic-label {
+  font-size: 10pt;
 }

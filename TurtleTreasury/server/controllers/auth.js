@@ -14,14 +14,15 @@ exports.auth = async function(req, res) {
 	}
 
 	//  Now find the user by their email address
-	let user = await User.findOne({ email: req.body.email });
+	let user = await User.findOne({ email: req.body.data.email });
 	if (!user) {
 		console.log('Incorrect Email or Password')
 		return res.send('Incorrect email or password.');
 	}
+	console.log(user);
 	// Then validate the Credentials in MongoDB match
 	// those provided in the request
-	const validPassword = await bcrypt.compare(req.body.password, user.password).then(function(result) {
+	const validPassword = await bcrypt.compare(req.body.data.password, user.password).then(function(result) {
 		if (!result) {
 			res.json({
 				message: 'error',
@@ -32,6 +33,7 @@ exports.auth = async function(req, res) {
 				message: 'success',
 				data: true
 			});
+			return res.send('Authentication Successful!');
 		}
 	});
 };

@@ -16,6 +16,12 @@ app.use(
 	})
 );
 app.use(bodyParser.json());
+
+app.use(function(req, res, next) {
+	res.header('Access-Control-Allow-Origin', 'localhost:3000'); // update to match the domain you will make the request from
+	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+	next();
+});
 // Connect to Mongoose and set connection variable
 mongoose.connect('mongodb://localhost/TurtleTreasury', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -37,6 +43,7 @@ app.get('/', (req, res) => res.send('Hello! This is the MongoDB server for Turtl
 
 // Use Api routes in the App
 app.use('/api', apiRoutes);
+
 // Launch app to listen to specified port
 app.listen(port, function() {
 	console.log('Running Turtle Treasury Server on port ' + port);

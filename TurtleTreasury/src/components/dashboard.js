@@ -39,6 +39,9 @@ function Dashboard() {
             <Col xs="2" className="navigation-font-size">
                 <Link to="/" className="create-new-project profile">Sign Out</Link>
             </Col>
+            <Col xs="2" className="navigation-font-size">
+                <Link to="/backend" className="create-new-project profile">Go To the Backend</Link>
+            </Col>
         </Row>
         <Row className="green-banner">
             <Col md="5">

@@ -1,38 +1,169 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hide-overflow {
+  overflow: auto !important;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'), url(./fonts/AvenirLTStd-Book.otf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col-md-8 {
+  padding: 0;
+}
+
+.col-md-7 {
+  padding: 0;
+}
+
+.MuiInput-underline.Mui-focused:after {
+  transform: none !important;
+}
+/* LOGIN PAGE STYLES */
+
+.left-image-home-page {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  padding-right: 4%;
+}
+
+.turtle-logo-home-page {
+  float: left;
+  width: 60px;
+  padding-right: 5px;
+}
+
+.home-page-title {
+  float: left;
+  font-size: xx-large;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.home-page-title-div {
+  padding-top: 10%;
+}
+
+p {
+  font-family: Avenir;
+}
+
+.treasury-text {
+  color: #64d2a2;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.login-form {
+  padding-top: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .login-label {
+  float: left;
+  padding-left: 4%;
+} */
+
+.form {
+  float: left !important;
+  padding-top: 1%;
+}
+
+.email-address-label {
+  float: left;
+  font-size: small;
+}
+
+.MuiInput-formControl {
+ width: 165%;
+}
+
+.MuiFormControl-root.MuiTextField-root {
+  padding-bottom: 5%;
+}
+
+.login-submit-button {
+  background-color: #00b665 !important;
+  color: white !important;
+  width: 15em !important;
+  height: 50px;
+  text-decoration: none;
+}
+
+.MuiButton-label {
+  font-size: 100%;
+  text-decoration: none !important;
+}
+
+.forgot-password {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  margin-top: 0 !important;
+  margin-bottom: 10pxy !important;
+}
+
+.new-account {
+  font-size: medium;
+}
+
+#standard-basic-label {
+  font-size: 10pt;
+}
+
+
+/* SIGNUP PAGE STYLES */
+
+.right-image-home-page {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.turtle-logo-signup-page {
+  float: left;
+  width: 60px;
+  margin-left: 40px;
+  padding-right: 5px;
+}
+
+.first-column-signup {
+  width: 25% !important;
+  margin-right: 4.5em !important;
+}
+
+.second-column-signup {
+  width: 25% !important;
+}
+
+.signup-form {
+  padding-top: 10%;
+}
+
+.hedera-label {
+  float: left;
+  font-size: large;
+  margin: 0;
+}
+
+.hedera-button {
+  background-color: #8259ef !important;
+  color: white !important;
+  margin-left: 8em !important;
+}
+
+.padding-left-column {
+  margin-left: 50px;
 }

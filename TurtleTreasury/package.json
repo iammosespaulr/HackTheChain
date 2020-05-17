@@ -38,7 +38,8 @@
     "uws": "~9.14.0"
   },
   "scripts": {
-    "start": "react-scripts start & mongod --dbpath=../db & node server/index.js",
+    "start": "react-scripts start",
+    "server": "mongod --dbpath=../db & node server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -17,7 +17,7 @@ app.use(
 );
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/hackthechain', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/TurtleTreasury', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Heroku Mongoose connection
 // mongoose.connect('mongodb://heroku_5686p02g:sia8l3fni4jmu7qbn0ac1t75mf@ds349857.mlab.com:49857/heroku_5686p02g', { useNewUrlParser: true });
@@ -39,5 +39,5 @@ app.get('/', (req, res) => res.send('Hello World with Express'));
 app.use('/api', apiRoutes);
 // Launch app to listen to specified port
 app.listen(port, function() {
-	console.log('Running RestHub on port ' + port);
+	console.log('Running Turtle Treasury Server on port ' + port);
 });

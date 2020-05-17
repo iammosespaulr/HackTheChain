@@ -25,14 +25,14 @@ exports.new = async function (req, res) {
 		return res.status(200).send("That user already exists!");
 	} else {
 		var user = new User({
-			first_name: req.body.first_name,
-			last_name: req.body.last_name,
-			phone: req.body.phone,
-			email: req.body.email,
-			password: req.body.password,
-			account_id: req.body.account_id,
-			private_key: req.body.private_key,
-		});
+            first_name: req.body.signup.first_name,
+            last_name: req.body.signup.last_name,
+            phone: req.body.signup.phone,
+            email: req.body.signup.email,
+            password: req.body.signup.password,
+            account_id: req.body.signup.account_id,
+            private_key: req.body.signup.private_key
+        });
 		const salt = await bcrypt.genSalt(10);
 		user.password = await bcrypt.hash(user.password, salt);
 		user.account_id = await bcrypt.hash(user.account_id, salt);

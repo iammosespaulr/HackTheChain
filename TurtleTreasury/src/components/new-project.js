@@ -21,6 +21,10 @@ function NewProject() {
         setImage(picture);
     }
 
+    function SubmitProj() {
+        window.location = '/dashboard'
+    }
+
   return (
     <Col md="12">
         <Row className="navbar">
@@ -73,7 +77,7 @@ function NewProject() {
         <p className="amount-field">$</p><TextField required id="standard-amount-basic" label="AMOUNT" className="amount-field text-algin" onChange={handleChange2}/>
         </Row>
         <Row className="padding-left-project-submission">
-        <Link to="/dashboard"><Button variant="contained" className="project-submit-button">Submit</Button></Link>
+        <Button variant="contained" className="project-submit-button" onClick={SubmitProj}>Submit</Button>
         </Row>
     </Col>
   );

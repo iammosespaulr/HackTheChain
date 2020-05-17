@@ -7,15 +7,17 @@ const router = express.Router();
 
 exports.auth = async function(req, res) {
 	// First Validate The HTTP Request
-	const { error } = validate(req.body);
+	const { error } = validate(req.body.data);
+
 	if (error) {
-		return res.status(400).send(error.details[0].message);
+		return res.send(error.details[0].message);
 	}
 
 	//  Now find the user by their email address
 	let user = await User.findOne({ email: req.body.email });
 	if (!user) {
-		return res.status(400).send('Incorrect email or password.');
+		console.log('Incorrect Email or Password')
+		return res.send('Incorrect email or password.');
 	}
 	// Then validate the Credentials in MongoDB match
 	// those provided in the request

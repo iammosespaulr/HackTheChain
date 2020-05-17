@@ -6,10 +6,6 @@
 .hide-overflow {
   overflow: auto !important;
 }
-@font-face {
-  font-family: 'Avenir';
-  src: local('Avenir'), url(./fonts/AvenirLTStd-Book.otf) format('truetype');
-}
 
 .col-md-8 {
   padding: 0;
@@ -242,91 +238,6 @@ h1 {
   margin-top: 5px;
 }
 
-.create-new-project:hover {
+.create-new-project {
   text-decoration: underline;
-  color: #00b665
-}
-
-.explore {
-  padding-top: 18px;
-}
-
-.profile {
-  color: black;
-}
-
-/* Project Page */
-
-.text-align {
-  width: 500px !important;
-}
-
-.padding-left-project {
-  padding-left: 35%;
-}
-
-.padding-left-project-submission {
-  padding-left: 50%;
-  margin-bottom: 2em;
-}
-
-.MuiInput-multiline {
-  width: 501px !important;
-}
-
-#standard-basic-title {
-  width: 305px !important;
-}
-.amount-field {
-  padding-top: 10px;
-  padding-right: 10px;
-}
-
-#standard-amount-basic {
-  width: 291px !important;
-}
-
-#standard-amount-basic-two {
-  width: 150px !important;
-}
-
-.fileUploader {
-  width: 67% !important;
-}
-
-.project-submit-button {
-  background-color: #00b665 !important;
-  color: white !important;
-  width: 20em !important;
-  height: 40px;
-  text-decoration: none;
-}
-
-.donate-submit-button {
-  background-color: #00b665 !important;
-  color: white !important;
-  width: 5em !important;
-  height: 40px;
-  text-decoration: none;
-}
-
-.project-description {
-  font-size: medium;
-}
-
-.donate {
-  padding-left: 50px;
-}
-
-.popup-content {
-  width: 400px !important;
-}
-
-.donation-field {
-  padding-left: 20px;
-}
-
-.donate-two {
-  margin-top: 10px !important;
-  margin-left: 120px !important;
 }

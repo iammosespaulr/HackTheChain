@@ -23,6 +23,10 @@ router
 	.put(userController.update)
 	.delete(userController.delete);
 
+router
+	.route('/users/new')
+	.post(userController.new)
+
 router.route('/auth').post(authController.auth);
 // Export API routes
 module.exports = router;

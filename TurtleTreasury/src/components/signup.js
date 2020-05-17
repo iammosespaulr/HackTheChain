@@ -58,7 +58,7 @@ function SignUpPage() {
 			console.log('Passwords match!');
 		}
 		console.log('Email ' + email);
-		console.log('Pasword ' + password);
+		console.log('Password ' + password);
 		console.log('Account Id ' + accountId);
 		console.log('Private Key ' + privateKey);
 		console.log('Phone Number ' + phoneNumber);
@@ -86,11 +86,13 @@ function SignUpPage() {
 			private_key: privateKey
 		};
 
-		// TODO: AUTHENTICATE USER HERE
-		axios.post(`localhost:4000/api/users`, { signup }).then((res) => {
-			if (res.data) {
-
-      }
+		axios
+		.post(`http://localhost:4000/api/users/new`, { signup })
+		.then((response) => {
+		  console.log(response);
+		})
+		.catch((error) => {
+		  console.log(error.response);
 		});
 	}
 

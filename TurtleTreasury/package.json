@@ -37,6 +37,7 @@
     "text-encoding": "^0.7.0",
     "uws": "~9.14.0"
   },
+  "proxy": "http://localhost:4000",
   "scripts": {
     "start": "react-scripts start",
     "server": "mongod --dbpath=../db & node server/index.js",

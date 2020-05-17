@@ -80,7 +80,7 @@ function SignUpPage() {
             <Col md="5">
               <Row>
                 <div className="home-page-title-div">
-                    <img src={Logo} className="turtle-logo-signup-page"/>
+                    <Link to="/"><img src={Logo} className="turtle-logo-signup-page"/></Link>
                       <p className="home-page-title">Turtle</p><p className="treasury-text home-page-title">Treasury</p>
                     </div>
                 </Row>

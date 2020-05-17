@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import LoginPage from './components/login';
 import SignUpPage from './components/signup';
+import Dashboard from './components/dashboard';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
@@ -21,7 +22,8 @@ function App() {
           <Provider store={store}>
           <Switch>
               <Route exact path="/" component = {LoginPage} />
-              <Route exact path = "/signup" component = {SignUpPage} />
+              <Route exact path="/signup" component = {SignUpPage} />
+              <Route exact path="/dashboard" component = {Dashboard} />
         </Switch>
         </Provider>
         </Router>

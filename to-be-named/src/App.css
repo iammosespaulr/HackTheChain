@@ -171,3 +171,77 @@ p {
 a:hover {
   text-decoration: none;
 }
+
+/* DASHBOARD PAGE */
+
+.green-banner {
+  background-color: #c2f0d8;
+}
+
+.turtle-logo-dashboard {
+  float: right;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-family: Avenir;
+}
+
+.dashboard-banner-text {
+  margin-top: 6%;
+}
+
+.dashboard-description {
+  font-size: large;
+}
+
+.navigation-font-size {
+  font-size: small;
+}
+
+.nav-bar-title {
+  margin-left: 35%;
+}
+
+.choose-project {
+  font-size: x-large;
+}
+
+.choose-project-alignment {
+  margin: 20px;
+}
+
+.project-image-div {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+}
+.project-icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.projects {
+  width: 100%;
+  display: inline-flex;
+  overflow: scroll;
+}
+
+.project-title {
+  font-size: medium;
+}
+
+.card-size {
+  width: 15em !important;
+}
+
+.navbar {
+  margin-top: 5px;
+}
+
+.create-new-project {
+  text-decoration: underline;
+}

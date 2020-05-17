@@ -32,7 +32,7 @@ function LoginPage() {
             </Col>
             <Col md="4" className="right-column">
                     <Row className="home-page-title-div">
-                    <img src={Logo} className="turtle-logo-home-page"/>
+                    <Link to="/"><img src={Logo} className="turtle-logo-home-page"/></Link>
                       <p className="home-page-title">                    
                         Turtle</p><p className="treasury-text home-page-title">Treasury</p>
                     </Row>
@@ -49,7 +49,7 @@ function LoginPage() {
                     <p className="forgot-password"><a href="#" className="forgot-password">Forgot Password?</a></p>
                     </Row>
                     <Row>
-                    <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
+                    <Link to="/dashboard"><Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button></Link>
                     </Row>
                     <Row>
                     <p className="new-account">Don't have an account? <Link to="/signup" className="treasury-text">Create a new account.</Link></p>

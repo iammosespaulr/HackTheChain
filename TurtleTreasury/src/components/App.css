@@ -1,0 +1,243 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.hide-overflow {
+  overflow: auto !important;
+}
+
+.col-md-8 {
+  padding: 0;
+}
+
+.col-md-7 {
+  padding: 0;
+}
+
+.MuiInput-underline.Mui-focused:after {
+  transform: none !important;
+}
+/* LOGIN PAGE STYLES */
+
+.left-image-home-page {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  padding-right: 4%;
+}
+
+.turtle-logo-home-page {
+  float: left;
+  width: 60px;
+  padding-right: 5px;
+}
+
+.home-page-title {
+  float: left;
+  font-size: xx-large;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.home-page-title-div {
+  padding-top: 10%;
+}
+
+p {
+  font-family: Avenir;
+}
+
+.treasury-text {
+  color: #64d2a2;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.login-form {
+  padding-top: 50%;
+}
+
+/* .login-label {
+  float: left;
+  padding-left: 4%;
+} */
+
+.form {
+  float: left !important;
+  padding-top: 1%;
+}
+
+.email-address-label {
+  float: left;
+  font-size: small;
+}
+
+.MuiInput-formControl {
+ width: 165%;
+}
+
+.MuiFormControl-root.MuiTextField-root {
+  padding-bottom: 5%;
+}
+
+.login-submit-button {
+  background-color: #00b665 !important;
+  color: white !important;
+  width: 15em !important;
+  height: 50px;
+  text-decoration: none;
+}
+
+.MuiButton-label {
+  font-size: 100%;
+  text-decoration: none !important;
+}
+
+.forgot-password {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+  margin-top: 0 !important;
+  margin-bottom: 10pxy !important;
+}
+
+.new-account {
+  font-size: medium;
+}
+
+#standard-basic-label {
+  font-size: 10pt;
+}
+
+
+/* SIGNUP PAGE STYLES */
+
+.right-image-home-page {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.turtle-logo-signup-page {
+  float: left;
+  width: 60px;
+  margin-left: 40px;
+  padding-right: 5px;
+}
+
+.first-column-signup {
+  width: 25% !important;
+  margin-right: 4.5em !important;
+}
+
+.second-column-signup {
+  width: 25% !important;
+}
+
+.signup-form {
+  padding-top: 10%;
+}
+
+.hedera-label {
+  float: left;
+  font-size: large;
+  margin: 0;
+}
+
+.hedera-button {
+  background-color: #8259ef !important;
+  color: white !important;
+  margin-left: 8em !important;
+}
+
+.padding-left-column {
+  margin-left: 50px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* DASHBOARD PAGE */
+
+.green-banner {
+  background-color: #c2f0d8;
+}
+
+.turtle-logo-dashboard {
+  float: right;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-family: Avenir;
+}
+
+.dashboard-banner-text {
+  margin-top: 6%;
+}
+
+.dashboard-description {
+  font-size: large;
+}
+
+.navigation-font-size {
+  font-size: small;
+}
+
+.nav-bar-title {
+  margin-left: 35%;
+}
+
+.choose-project {
+  font-size: x-large;
+}
+
+.choose-project-alignment {
+  margin: 20px;
+}
+
+.project-image-div {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+}
+.project-icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.projects {
+  width: 100%;
+  display: inline-flex;
+  overflow: scroll;
+}
+
+.project-title {
+  font-size: medium;
+}
+
+.card-size {
+  width: 15em !important;
+}
+
+.navbar {
+  margin-top: 5px;
+}
+
+.create-new-project {
+  text-decoration: underline;
+}

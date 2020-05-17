@@ -10,17 +10,20 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
+import { Provider } from "react-redux";
+import store from "./store";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* <LoginPage></LoginPage> */}
         <Router>
+          <Provider store={store}>
           <Switch>
               <Route exact path="/" component = {LoginPage} />
               <Route exact path = "/signup" component = {SignUpPage} />
         </Switch>
+        </Provider>
         </Router>
       </header>
     </div>

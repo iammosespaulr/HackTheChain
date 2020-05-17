@@ -167,3 +167,7 @@ p {
 .padding-left-column {
   margin-left: 50px;
 }
+
+a:hover {
+  text-decoration: none;
+}

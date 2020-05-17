@@ -56,7 +56,7 @@ function LoginPage() {
                     <TextField required type="password" id="standard-basic" label="PASSWORD" className="password-login-page" onChange={handleChange2}/>
                 </div>
                 <div className="form">
-                <p className="forgot-password"><a href="#" className="forgot-password" >Forgot Password?</a></p>
+                <p className="forgot-password"><a href="#" className="forgot-password">Forgot Password?</a></p>
                 <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
                 <p className="new-account">Don't have an account? <Link to="/signup" className="treasury-text">Create a new account.</Link></p>
                 </div>

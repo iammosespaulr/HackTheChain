@@ -31,6 +31,9 @@ function SignUpPage() {
   
   return (
     <Container>
+            <Col xs="8">
+                <img src={LeafWithCoins} className="right-image-home-page" />
+            </Col>
             <Col xs="4">
                 {/* <a
                 className="App-link"
@@ -41,29 +44,39 @@ function SignUpPage() {
                 The Source
                 </a> */}
                 <Row>
-                    <img src={Logo} className="turtle-logo-home-page"/>
-                    <div className="home-page-title-div">
+                <div className="home-page-title-div">
+                    <img src={Logo} className="turtle-logo-signup-page"/>
                       <p className="home-page-title">Turtle</p><p className="treasury-text home-page-title">Treasury</p>
                     </div>
                 </Row>
-                <Row className="">
+                <Row className="signup-form">
                  <b className="login-label">Sign Up!</b>
                  <br />
-                 <p>Tell us more about you so you can get started.</p>
+                 <p className="new-account login-label">Tell us more about you so you can get started.</p>
                  </Row>
-                <div  className="form">
-                <form noValidate autoComplete="off">
-                    <TextField required id="standard-basic" label="EMAIL ADDRESS" onChange={handleChange}/>
+                 <br />
+                 <Row>
+                 <p className="hedera-label"><b>1.</b>Create Hedera Account
+                  <a href=""><Button variant="contained" size="large" fontSize="100px" className="hedera-button">Go To Hedera</Button></a></p>
+                  <div className="form login-label">
+                     <TextField required id="standard-basic" className="first-column-signup" label="ACCOUNT ID" onChange={handleChange}/>
+                     <TextField required id="standard-basic" className="second-column-signup" label="PRIVATE KEY" onChange={handleChange}/>
+                  </div>
+                  <br />
+                  <p className="hedera-label part-two"><b>2.</b>Fill in information</p>
+                 </Row>
+                 <div className="form login-label">
+                    <TextField required id="standard-basic" className="first-column-signup" label="FIRST NAME" onChange={handleChange}/>
+                    <TextField required id="standard-basic" className="second-column-signup" label="LAST NAME" onChange={handleChange}/>
                     <br />
-                    <TextField required type="password" id="standard-basic" label="PASSWORD" className="password-login-page" onChange={handleChange2}/>
-                </form>
-                <p className="forgot-password"><a href="#" className="forgot-password" >Forgot Password?</a></p>
-                <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
-                <p className="new-account">Don't have an account? <a href="#" className="treasury-text">Create a new account.</a></p>
-                </div>
-            </Col>
-            <Col xs="8">
-                <img src={LeafWithCoins} className="right-image-home-page" />
+                    <TextField required id="standard-basic" className="first-column-signup" label="PHONE NUMBER" onChange={handleChange}/>
+                    <TextField required id="standard-basic" className="second-column-signup" label="EMAIL ADDRESS" onChange={handleChange}/>
+                    <br />
+                    <TextField required type="password" className="first-column-signup" id="standard-basic" label="PASSWORD" onChange={handleChange}/>
+                    <TextField required type="password" className="second-column-signup" id="standard-basic" label="RE-ENTER PASSWORD" onChange={handleChange}/>
+                    <br />
+                    <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign Up</Button>
+                 </div>
             </Col>
     </Container>
   );

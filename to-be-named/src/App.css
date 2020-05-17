@@ -13,7 +13,7 @@
   float: left;
   height: 100vh;
   width: 71%;
-  margin-top: -10px;
+  object-fit: cover;
   padding-right: 4%;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .home-page-title-div {
-  padding-top: 2.7%;
+  padding-top: 2%;
 }
 
 p {
@@ -54,12 +54,12 @@ p {
 }
 
 .login-form {
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 .login-label {
   float: left;
-  /* padding-left: 5%; */
+  padding-left: 4%;
 }
 
 .form {
@@ -86,10 +86,12 @@ p {
   color: white !important;
   width: 70% !important;
   height: 50px;
+  text-decoration: none;
 }
 
 .MuiButton-label {
-  font-size: 20px !important;
+  font-size: 100%;
+  text-decoration: none !important;
 }
 
 .forgot-password {
@@ -115,8 +117,47 @@ p {
 /* SIGNUP PAGE STYLES */
 
 .right-image-home-page {
-  float: left;
+  float: right;
   height: 100vh;
-  width: 71%;
-  margin-top: -10px;
+  width: 50%;
+  /* margin-right: -150px; */
+  object-fit: cover;
+  /* margin-top: -10px; */
 }
+
+.turtle-logo-signup-page {
+  float: left;
+  width: 50px;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+.first-column-signup {
+  margin-right: 5em !important;
+  width: 35% !important;
+}
+
+.second-column-signup {
+  width: 35% !important;
+}
+
+.signup-form {
+  padding-top: 6%;
+}
+
+.hedera-label {
+  float: left;
+  padding-left: 4%;
+  font-size: large;
+  margin: 0;
+}
+
+.hedera-button {
+  background-color: #8259ef !important;
+  color: white !important;
+  margin-left: 8em !important;
+}
+/* 
+.part-two {
+  padding-top: 2.7em;
+} */

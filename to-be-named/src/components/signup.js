@@ -30,55 +30,54 @@ function SignUpPage() {
   }
   
   return (
-    <Container>
-            <Col xs="8">
-                <img src={LeafWithCoins} className="right-image-home-page" />
-            </Col>
-            <Col xs="4">
-                {/* <a
-                className="App-link"
-                href="https://github.com/iammosespaulr/HackTheChain"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                The Source
-                </a> */}
-                <Row>
+    <Row className="hide-overflow">
+            <Col md="5">
+              <Row>
                 <div className="home-page-title-div">
                     <img src={Logo} className="turtle-logo-signup-page"/>
                       <p className="home-page-title">Turtle</p><p className="treasury-text home-page-title">Treasury</p>
                     </div>
                 </Row>
-                <Row className="signup-form">
-                 <b className="login-label">Sign Up!</b>
-                 <br />
-                 <p className="new-account login-label">Tell us more about you so you can get started.</p>
+                <Row className="signup-form padding-left-column">
+                 <b>Sign Up!</b>
+                </Row>
+                <Row className="padding-left-column">
+                 <p className="new-account">Tell us more about you so you can get started.</p>
                  </Row>
-                 <br />
-                 <Row>
-                 <p className="hedera-label"><b>1.</b>Create Hedera Account
-                  <a href=""><Button variant="contained" size="large" fontSize="100px" className="hedera-button">Go To Hedera</Button></a></p>
-                  <div className="form login-label">
+                 <Row className="padding-left-column">
+                 <p className="hedera-label"><b>1.</b>Create Hedera Account</p>
+                  <a href=""><Button variant="contained" size="large" fontSize="100px" className="hedera-button">Go To Hedera</Button></a>
+                </Row>
+                <Row className="padding-left-column">
                      <TextField required id="standard-basic" className="first-column-signup" label="ACCOUNT ID" onChange={handleChange}/>
                      <TextField required id="standard-basic" className="second-column-signup" label="PRIVATE KEY" onChange={handleChange}/>
-                  </div>
-                  <br />
+                </Row>
+                <Row className="padding-left-column">
                   <p className="hedera-label part-two"><b>2.</b>Fill in information</p>
                  </Row>
-                 <div className="form login-label">
-                    <TextField required id="standard-basic" className="first-column-signup" label="FIRST NAME" onChange={handleChange}/>
+                 <Row className="padding-left-column">
+                 <TextField required id="standard-basic" className="first-column-signup" label="FIRST NAME" onChange={handleChange}/>
                     <TextField required id="standard-basic" className="second-column-signup" label="LAST NAME" onChange={handleChange}/>
-                    <br />
-                    <TextField required id="standard-basic" className="first-column-signup" label="PHONE NUMBER" onChange={handleChange}/>
+                 </Row>
+                 <Row className="padding-left-column">
+                 <TextField required id="standard-basic" className="first-column-signup" label="PHONE NUMBER" onChange={handleChange}/>
                     <TextField required id="standard-basic" className="second-column-signup" label="EMAIL ADDRESS" onChange={handleChange}/>
-                    <br />
-                    <TextField required type="password" className="first-column-signup" id="standard-basic" label="PASSWORD" onChange={handleChange}/>
-                    <TextField required type="password" className="second-column-signup" id="standard-basic" label="RE-ENTER PASSWORD" onChange={handleChange}/>
-                    <br />
-                    <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign Up</Button>
-                 </div>
+                 </Row>
+                 <Row className="padding-left-column">
+                 <TextField required type="password" className="first-column-signup" id="standard-basic" label="PASSWORD" onChange={handleChange}/>
+                    <TextField required type="password" className="second-column-signup" id="standard-basic" label="RE-PASSWORD" onChange={handleChange}/>     
+                 </Row>
+                 <Row>
+                   <Col md="12">
+                   <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign Up</Button>
+                   </Col>
+
+                 </Row>
             </Col>
-    </Container>
+            <Col md="7">
+                <img src={LeafWithCoins} className="right-image-home-page" />
+            </Col>
+    </Row>
   );
 }
 

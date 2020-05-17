@@ -26,42 +26,38 @@ function LoginPage() {
   }
   
   return (
-    <Container>
-            <Col xs="8">
+    <Row className="hide-overflow">
+            <Col md="8">
                 <img src={LeafWithCoins} className="left-image-home-page" />
             </Col>
-            <Col xs="4" className="right-column">
-                {/* <a
-                className="App-link"
-                href="https://github.com/iammosespaulr/HackTheChain"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                The Source
-                </a> */}
-                <Row>
-                    <div className="home-page-title-div">
+            <Col md="4" className="right-column">
+                    <Row className="home-page-title-div">
                     <img src={Logo} className="turtle-logo-home-page"/>
                       <p className="home-page-title">                    
                         Turtle</p><p className="treasury-text home-page-title">Treasury</p>
-                    </div>
-                </Row>
+                    </Row>
                 <Row className="login-form">
-                 <b className="login-label">Login</b>
-                 <br />
+                 <b>Login</b>
                  </Row>
                 <div className="form">
                     <TextField required id="standard-basic" label="EMAIL ADDRESS" onChange={handleChange}/>
                     <br />
                     <TextField required type="password" id="standard-basic" label="PASSWORD" className="password-login-page" onChange={handleChange2}/>
                 </div>
-                <div className="form">
-                <p className="forgot-password"><a href="#" className="forgot-password">Forgot Password?</a></p>
-                <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
-                <p className="new-account">Don't have an account? <Link to="/signup" className="treasury-text">Create a new account.</Link></p>
-                </div>
+                <Col md="12" className="form">                
+                    <Row>
+                    <p className="forgot-password"><a href="#" className="forgot-password">Forgot Password?</a></p>
+                    </Row>
+                    <Row>
+                    <Button variant="contained" className="login-submit-button" onClick={handleSubmit}>Sign In</Button>
+                    </Row>
+                    <Row>
+                    <p className="new-account">Don't have an account? <Link to="/signup" className="treasury-text">Create a new account.</Link></p>
+                    </Row>
+                </Col>
+
             </Col>
-    </Container>
+    </Row>
   );
 }
 

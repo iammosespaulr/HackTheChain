@@ -6,6 +6,7 @@ import SignUpPage from './components/signup';
 import Dashboard from './components/dashboard';
 import Backend from './components/backendstuff';
 import ReactDOM from 'react-dom';
+import NewProject from './components/new-project';
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/" component = {LoginPage} />
               <Route exact path="/signup" component = {SignUpPage} />
               <Route exact path="/dashboard" component = {Dashboard} />
+              <Route exact path="/create" component = {NewProject} />
               <Route exact path="/backend" component = {Backend} />
         </Switch>
         </Provider>

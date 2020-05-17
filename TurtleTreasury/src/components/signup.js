@@ -58,7 +58,7 @@ function SignUpPage() {
 			console.log('Passwords match!');
 		}
 		console.log('Email ' + email);
-		console.log('Pasword ' + password);
+		console.log('Password ' + password);
 		console.log('Account Id ' + accountId);
 		console.log('Private Key ' + privateKey);
 		console.log('Phone Number ' + phoneNumber);

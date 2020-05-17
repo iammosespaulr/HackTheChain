@@ -43,7 +43,7 @@
   },
   "proxy": "http://localhost:4000",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start & npm run server",
     "server": "mongod --dbpath=../db & node server/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",

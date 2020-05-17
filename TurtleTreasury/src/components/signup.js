@@ -86,11 +86,13 @@ function SignUpPage() {
 			private_key: privateKey
 		};
 
-		// TODO: AUTHENTICATE USER HERE
-		axios.post(`localhost:4000/api/users`, { signup }).then((res) => {
-			if (res.data) {
-
-      }
+		axios
+		.post(`http://localhost:4000/api/users/new`, { signup })
+		.then((response) => {
+		  console.log(response);
+		})
+		.catch((error) => {
+		  console.log(error.response);
 		});
 	}
 

@@ -32,7 +32,7 @@ function LoginPage() {
       .post(`/api/auth`, { data })
       .then((response) => {
         console.log(response);
-        if (response.data !== "Incorrect email or password."){
+        if (response.data.message == "success"){
             window.location = '/dashboard'
         }
         else {

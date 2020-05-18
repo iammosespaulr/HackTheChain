@@ -7,6 +7,7 @@ import "../fonts/AvenirLTStd-Book.otf";
 import { TextField, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import axios from "axios";
+require('dotenv').config()
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -27,9 +28,8 @@ function LoginPage() {
       email: email,
       password: password,
     };
-
     axios
-      .post(`http://localhost:4000/api/auth`, { data })
+      .post(`/api/auth`, { data })
       .then((response) => {
         console.log(response);
         if (response.data !== "Incorrect email or password."){

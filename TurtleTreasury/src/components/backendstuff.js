@@ -18,9 +18,8 @@ const {
   CryptoTransferTransaction,
 } = require("@hashgraph/sdk");
 
-const operatorPrivateKey =
-  "302e020100300506032b6570042204203c8213c74466cfc91276f9a8649932936a929490b27ac27085b2f515ed701547";
-const operatorAccount = "0.0.46239";
+const operatorPrivateKey = process.env.REACT_APP_PRIVATE_KEY;
+const operatorAccount = process.env.REACT_APP_ACC_ID;
 const client = Client.forTestnet();
 client.setOperator(operatorAccount, operatorPrivateKey);
 

@@ -87,7 +87,7 @@ function SignUpPage() {
 		};
 
 		axios
-		.post(`http://localhost:4000/api/users/new`, { signup })
+		.post(`/api/users/new`, { signup })
 		.then((response) => {
 		  console.log(response);
 		})

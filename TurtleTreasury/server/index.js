@@ -5,6 +5,8 @@ let bodyParser = require('body-parser');
 // Import Mongoose
 let mongoose = require('mongoose');
 // Initialize the app
+https = require('https');
+var fs = require('fs')
 let app = express();
 
 // Import routes
@@ -45,6 +47,9 @@ app.get('/', (req, res) => res.send('Hello! This is the MongoDB server for Turtl
 app.use('/api', apiRoutes);
 
 // Launch app to listen to specified port
-app.listen(port, function() {
+https.createServer({
+	key: fs.readFileSync('server.key'),
+	cert: fs.readFileSync('server.cert')
+  }, app).listen(port, function() {
 	console.log('Running Turtle Treasury Server on port ' + port);
 });

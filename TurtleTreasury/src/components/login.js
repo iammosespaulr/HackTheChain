@@ -29,7 +29,7 @@ function LoginPage() {
       password: password,
     };
     axios
-      .post(`/api/auth`, { data })
+      .post(`http://34.69.115.20:4000/api/auth`, { data })
       .then((response) => {
         console.log(response);
         if (response.data.message == "success"){

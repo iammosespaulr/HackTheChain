@@ -87,7 +87,7 @@ function SignUpPage() {
 		};
 
 		axios
-		.post(`/api/users/new`, { signup })
+		.post(`http://34.69.115.20:4000/api/users/new`, { signup })
 		.then((response) => {
 		  console.log(response);
 		})

@@ -6,14 +6,17 @@ resources:
   cpu: 1
   memory_gb: 0.5
   disk_size_gb: 5
-handlers:
-- url: /(.*\..+)$
-  static_files: build/\l
-  upload: build/(.*\..+)$
-- url: /.*
-  static_files: build/index.html
-  upload: build/index.html
 network:
   forwarded_ports:
     - 3000/tcp
     - 4000/tcp
+# [START handlers]
+handlers:
+ - url: /
+   static_files: build/index.html
+   upload: build/index.html
+
+ - url: /(.*)
+   static_files: build/\1
+   upload: build/(.*)
+# [END handlers]

@@ -44,10 +44,10 @@
   "proxy": "http://34.69.115.20:4000",
   "scripts": {
     "start": "serve -s build",
-    "build": "npm run build",
-    "locstart": "react-scripts start",
+    "prestart": "npm install -g serve",
+    "local": "react-scripts start",
     "locserver": "mongod --dbpath=../db & node server/index.js",
-    "locbuild": "react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

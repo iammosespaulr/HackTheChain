@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6c13ef9c.chunk.css",
+    "main.js": "/static/js/main.2b3df8f5.chunk.js",
+    "main.js.map": "/static/js/main.2b3df8f5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6fdda87d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6fdda87d.js.map",
+    "static/css/2.2ce93ba3.chunk.css": "/static/css/2.2ce93ba3.chunk.css",
+    "static/js/2.dd3e1bf8.chunk.js": "/static/js/2.dd3e1bf8.chunk.js",
+    "static/js/2.dd3e1bf8.chunk.js.map": "/static/js/2.dd3e1bf8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a5dbc8c74c5e41e850fb1ddfd4ab74c7.js": "/precache-manifest.a5dbc8c74c5e41e850fb1ddfd4ab74c7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.2ce93ba3.chunk.css.map": "/static/css/2.2ce93ba3.chunk.css.map",
+    "static/css/main.6c13ef9c.chunk.css.map": "/static/css/main.6c13ef9c.chunk.css.map",
+    "static/js/2.dd3e1bf8.chunk.js.LICENSE.txt": "/static/js/2.dd3e1bf8.chunk.js.LICENSE.txt",
+    "static/media/AvenirLTStd-Book.otf": "/static/media/AvenirLTStd-Book.ecb0c2ae.otf",
+    "static/media/Florida_Box_Turtle_Digon3_re-edited.jpg": "/static/media/Florida_Box_Turtle_Digon3_re-edited.bdfc65f8.jpg",
+    "static/media/UploadIcon.svg": "/static/media/UploadIcon.1cedb6e9.svg",
+    "static/media/artur-tumasjan-qLzWvcQq-V8-unsplash.jpg": "/static/media/artur-tumasjan-qLzWvcQq-V8-unsplash.1fb1b857.jpg",
+    "static/media/austin-pacheco-FtL07GM9Q7Y-unsplash.jpg": "/static/media/austin-pacheco-FtL07GM9Q7Y-unsplash.f6a87c02.jpg",
+    "static/media/ben-white-4K2lIP0zc_k-unsplash.jpg": "/static/media/ben-white-4K2lIP0zc_k-unsplash.76ae905b.jpg",
+    "static/media/ewscripps.brightspotcdn.png": "/static/media/ewscripps.brightspotcdn.bb0ee073.png",
+    "static/media/facts-turtles.jpg": "/static/media/facts-turtles.6d73dc21.jpg",
+    "static/media/kevin-mccutcheon-APDMfLHZiRA-unsplash.jpg": "/static/media/kevin-mccutcheon-APDMfLHZiRA-unsplash.4d5b70ff.jpg",
+    "static/media/leaf-in-coins.jpg": "/static/media/leaf-in-coins.1209fb5d.jpg",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/logo192.png": "/static/media/logo192.84454181.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6fdda87d.js",
+    "static/css/2.2ce93ba3.chunk.css",
+    "static/js/2.dd3e1bf8.chunk.js",
+    "static/css/main.6c13ef9c.chunk.css",
+    "static/js/main.2b3df8f5.chunk.js"
+  ]
+}
